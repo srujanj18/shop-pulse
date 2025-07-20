@@ -47,3 +47,26 @@ class Order(Base):
 
     user = relationship("User", back_populates="orders")
     product = relationship("Product", back_populates="orders")
+
+
+class Wishlist(Base):
+    __tablename__ = "wishlist"
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id"))
+    product_id = Column(Integer, ForeignKey("products.id"))
+    added_at = Column(DateTime(timezone=True), server_default=func.now())
+
+    user = relationship("User")
+    product = relationship("Product")
+
+class PaymentMethod(Base):
+    __tablename__ = "payment_methods"
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id"))
+    card_last4 = Column(String)
+    card_brand = Column(String)
+    expiry_month = Column(Integer)
+    expiry_year = Column(Integer)
+    added_at = Column(DateTime(timezone=True), server_default=func.now())
+
+    user = relationship("User")

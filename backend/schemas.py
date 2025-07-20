@@ -25,3 +25,22 @@ class UserLogin(BaseModel):
     email: EmailStr
     password: str        
         
+class WishlistSchema(BaseModel):
+    id: int
+    user_id: int
+    product_id: int
+    added_at: datetime
+    class Config:
+        orm_mode = True
+
+class PaymentMethodSchema(BaseModel):
+    id: int
+    user_id: int
+    card_last4: str
+    card_brand: str
+    expiry_month: int
+    expiry_year: int
+    added_at: datetime
+    class Config:
+        orm_mode = True
+        
