@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 node_modules
 # .gitignore
 .env
@@ -8,3 +9,15 @@ dist/
 build/
 *.pyc
 .vercel
+=======
+node_modules
+# .gitignore
+.env
+.venv/
+__pycache__/
+node_modules/
+dist/
+build/
+*.pyc
+.vercel
+>>>>>>> 97fe60a1c83b360a8cd8edd73bc29bd323bb522f
