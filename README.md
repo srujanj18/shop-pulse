@@ -1,66 +1,101 @@
-# Welcome to your Lovable project
+# Shop Pulse Frontend
 
-## Project info
+A modern, responsive e-commerce frontend built with React, Vite, TypeScript, shadcn-ui, and Tailwind CSS. This project powers the Shop Pulse platform, providing a fast, beautiful, and customizable shopping experience.
 
+---
 
-## How can I edit this code?
+## 🚀 Features
+- Modern UI with shadcn-ui and Tailwind CSS
+- Fast development with Vite
+- TypeScript for type safety
+- Responsive design (mobile & desktop)
+- Dark mode toggle
+- Real-time order data (with backend integration)
+- Wishlist, payment methods, and user profile management
+- Amazon affiliate integration
+- Contact form
+- Chatbot with modern UI
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 🛠️ Tech Stack
+- [Vite](https://vitejs.dev/) (build tool)
+- [React](https://react.dev/) (UI library)
+- [TypeScript](https://www.typescriptlang.org/) (type safety)
+- [shadcn-ui](https://ui.shadcn.com/) (UI components)
+- [Tailwind CSS](https://tailwindcss.com/) (utility-first CSS)
+- [React Router](https://reactrouter.com/) (SPA navigation)
+- [Axios](https://axios-http.com/) (HTTP requests)
 
+---
 
+## 🧑‍💻 Local Development
 
-**Use your preferred IDE**
+### Prerequisites
+- [Node.js & npm](https://nodejs.org/) (recommended: use [nvm](https://github.com/nvm-sh/nvm#installing-and-updating))
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
+### Getting Started
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# 1. Clone the repository
+ git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# 2. Navigate to the project directory
+ cd shop-pulse-create/frontend
 
-# Step 3: Install the necessary dependencies.
-npm i
+# 3. Install dependencies
+ npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+# 4. Start the development server
+ npm run dev
 ```
+- The app will be available at `http://localhost:5173` (or as shown in your terminal).
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🌐 Deployment
 
-**Use GitHub Codespaces**
+### Deploy to Vercel (Recommended)
+1. Push your code to GitHub.
+2. Go to [Vercel](https://vercel.com/) and import your repo.
+3. Set the **Root Directory** to `frontend`.
+4. Set **Build Command** to `npm run build` and **Output Directory** to `dist`.
+5. Deploy!
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Other Options
+- Netlify, Render, or your own server (see their docs for Vite/React deployment).
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## ✏️ How to Edit This Code
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### **Use your preferred IDE**
+- Clone the repo, make changes locally, and push to GitHub. Vercel (or your host) will auto-deploy.
+
+### **Edit directly in GitHub**
+- Navigate to the file, click the pencil icon, edit, and commit.
+
+### **Use GitHub Codespaces**
+- Click the green "Code" button, select "Codespaces", and launch a new codespace to edit in the cloud.
+
+---
+
+## 🔗 Custom Domain
+- Go to your Vercel project dashboard: **Settings > Domains**
+- Click **Connect Domain** and follow the instructions.
+- [Read the Vercel custom domain guide](https://vercel.com/docs/concepts/projects/custom-domains)
+
+---
+
+## 📄 More Documentation
+- [Vite Docs](https://vitejs.dev/guide/)
+- [React Docs](https://react.dev/learn)
+- [Tailwind CSS Docs](https://tailwindcss.com/docs/installation)
+- [shadcn-ui Docs](https://ui.shadcn.com/docs)
+
+---
+
+## 📝 License
+This project is for educational and demo purposes. Please check with the project owner for commercial use.
 
 
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
